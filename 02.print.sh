@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo -e "\e[31m text in red color
-Hello Naren
+echo -e "\e[31m text in red color"
+echo Hello Naren
