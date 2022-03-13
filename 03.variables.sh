@@ -13,6 +13,6 @@ Date=$(date +%F)
 echo Today date is $Date
 c=10
 d=20
-Add=$((add c+d))
+Add=$(($c+$d))
 echo Add=$Add
 
