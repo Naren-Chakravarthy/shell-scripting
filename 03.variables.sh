@@ -9,5 +9,10 @@ echo $b practice
 Date=13.03.2022
 echo today date is $Date
 
-Date=$(date +%f)
+Date=$(date +%F)
 echo Today date is $Date
+c=10
+d=20
+Add=$((add c+d))
+echo Add=$Add
+
