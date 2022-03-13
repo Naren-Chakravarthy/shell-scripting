@@ -1,7 +1,7 @@
 #!/bin/bash
 
 a=50
-b=Naren devops
+b=Narendevops
 echo $atimes
 echo $b
 echo ${a}times
