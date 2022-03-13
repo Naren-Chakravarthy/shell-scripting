@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="quotes concept" />
+    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="quotes concept">
+      <change beforePath="$PROJECT_DIR$/04.inputs.sh" beforeDir="false" afterPath="$PROJECT_DIR$/04.inputs.sh" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -327,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647187031485</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="quotes concept">
+      <created>1647187425877</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1647187425877</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

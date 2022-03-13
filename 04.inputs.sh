@@ -8,3 +8,6 @@ echo All Argument= $*
 echo No of Arguments= $#
 echo mango cost is $10
 echo mango cost is '$10'
+Training=DevOps
+echo 'Training= $Training'
+echo "Training= $Training"
