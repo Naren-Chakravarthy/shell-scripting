@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="variables, arrays">
-      <change afterPath="$PROJECT_DIR$/04.inputs.sh" afterDir="false" />
+    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="Input Special Variables">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -316,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647182589003</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Input Special Variables">
+      <created>1647184909815</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1647184909815</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -341,6 +347,7 @@
     <MESSAGE value="variables declaration, Dynamic date scenario" />
     <MESSAGE value="variables declaration, Dynamic data scenario" />
     <MESSAGE value="variables, arrays" />
-    <option name="LAST_COMMIT_MESSAGE" value="variables, arrays" />
+    <MESSAGE value="Input Special Variables" />
+    <option name="LAST_COMMIT_MESSAGE" value="Input Special Variables" />
   </component>
 </project>
