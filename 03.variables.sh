@@ -23,4 +23,5 @@ a=data
 echo $a
 naren=pandikukku
 echo geetha is a $naren
-
+c=30
+echo $c
