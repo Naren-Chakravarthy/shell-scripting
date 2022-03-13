@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="variables declaration, Dynamic data scenario">
+      <change beforePath="$PROJECT_DIR$/03.variables.sh" beforeDir="false" afterPath="$PROJECT_DIR$/03.variables.sh" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="26H4cqytHsucm7nP7VmITZGEw31" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="" />
+      <created>1647067533490</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647067533490</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Adding a new sample file for demonstration">
+      <created>1647085789808</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1647085789808</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adding a one more line for demo">
+      <created>1647088720165</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1647088720181</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adding a second line for demo">
+      <created>1647103263173</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1647103263173</updated>
+    </task>
+    <task id="LOCAL-00004" summary="creating a first project for she bang demonstration">
+      <created>1647105668525</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1647105668525</updated>
+    </task>
+    <task id="LOCAL-00005" summary="created a first script for she bang demonstration">
+      <created>1647106037107</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1647106037107</updated>
+    </task>
+    <task id="LOCAL-00006" summary="created a first script for she bang demonstration">
+      <created>1647106408619</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1647106408619</updated>
+    </task>
+    <task id="LOCAL-00007" summary="created a first script for she bang demonstration">
+      <created>1647106495725</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1647106495725</updated>
+    </task>
+    <task id="LOCAL-00008" summary="created a first script for she bang demonstration">
+      <created>1647107363300</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1647107363300</updated>
+    </task>
+    <task id="LOCAL-00009" summary="created a first script for she bang demonstration">
+      <created>1647108411224</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1647108411224</updated>
+    </task>
+    <task id="LOCAL-00010" summary="created a first script for she bang demonstration">
+      <created>1647109257285</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1647109257285</updated>
+    </task>
+    <task id="LOCAL-00011" summary="creating a second script for print demo">
+      <created>1647109627330</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1647109627330</updated>
+    </task>
+    <task id="LOCAL-00012" summary="creating a second script for print demo">
+      <created>1647109711616</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1647109711616</updated>
+    </task>
+    <task id="LOCAL-00013" summary="creating a second script for print demo">
+      <created>1647109811735</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1647109811735</updated>
+    </task>
+    <task id="LOCAL-00014" summary="creating a second script for print demo">
+      <created>1647109897840</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1647109897840</updated>
+    </task>
+    <task id="LOCAL-00015" summary="creating a second script for print demo">
+      <created>1647109958965</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1647109958965</updated>
+    </task>
+    <task id="LOCAL-00016" summary="creating a second script for print demo">
+      <created>1647110308701</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1647110308701</updated>
+    </task>
+    <task id="LOCAL-00017" summary="creating a second script for print demo">
+      <created>1647110812107</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1647110812107</updated>
+    </task>
+    <task id="LOCAL-00018" summary="variables declaration">
+      <created>1647176415841</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1647176415841</updated>
+    </task>
+    <task id="LOCAL-00019" summary="variables declaration">
+      <created>1647176664993</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1647176664993</updated>
+    </task>
+    <task id="LOCAL-00020" summary="variables declaration">
+      <created>1647176798518</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1647176798518</updated>
+    </task>
+    <task id="LOCAL-00021" summary="variables declaration">
+      <created>1647176854407</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1647176854407</updated>
+    </task>
+    <task id="LOCAL-00022" summary="variables declaration, Dynamic date scenario">
+      <created>1647177034998</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1647177034998</updated>
+    </task>
+    <task id="LOCAL-00023" summary="variables declaration, Dynamic data scenario">
+      <created>1647177508012</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1647177508012</updated>
+    </task>
+    <task id="LOCAL-00024" summary="variables declaration, Dynamic data scenario">
+      <created>1647177852334</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1647177852334</updated>
+    </task>
+    <task id="LOCAL-00025" summary="variables declaration, Dynamic data scenario">
+      <created>1647178021809</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1647178021809</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding a new sample file for demonstration" />
+    <MESSAGE value="Adding a one more line for demo" />
+    <MESSAGE value="Adding a second line for demo" />
+    <MESSAGE value="creating a first project for she bang demonstration" />
+    <MESSAGE value="created a first script for she bang demonstration" />
+    <MESSAGE value="creating a second script for print demo" />
+    <MESSAGE value="variables declaration" />
+    <MESSAGE value="variables declaration, Dynamic date scenario" />
+    <MESSAGE value="variables declaration, Dynamic data scenario" />
+    <option name="LAST_COMMIT_MESSAGE" value="variables declaration, Dynamic data scenario" />
+  </component>
+</project>
