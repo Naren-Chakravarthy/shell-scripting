@@ -11,4 +11,4 @@ echo mango cost is '$10'
 Training=DevOps
 echo 'Training= $Training'
 echo "Training= $Training"
-echo Training= $Training
+echo Training is $Training
