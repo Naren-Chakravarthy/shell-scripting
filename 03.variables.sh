@@ -28,4 +28,4 @@ echo $c
 c=40
 echo $c
 c=(10 20 30 40 naren geetha)
-echo ${c[4] c[5]}
+echo ${c[4],c[5]}
