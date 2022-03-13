@@ -17,7 +17,7 @@ Add=$(($c+$d))
 echo Add=$Add
 x=30
 y=50
-Add=($x+$y)
+Add=$(($x+$y))
 echo Add=$Add
 
 
