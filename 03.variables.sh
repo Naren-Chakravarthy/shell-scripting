@@ -21,3 +21,6 @@ Add=$(($x+$y))
 echo Add=$Add
 a=data
 echo $a
+naren=pandikukku
+echo geetha is a $naren
+
