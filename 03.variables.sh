@@ -19,5 +19,5 @@ x=30
 y=50
 Add=$(($x+$y))
 echo Add=$Add
-
-
+a=data
+echo $a
