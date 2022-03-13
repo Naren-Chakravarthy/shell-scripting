@@ -6,4 +6,5 @@ echo Second Argument= $2
 echo Third Argument= $3
 echo All Argument= $*
 echo No of Arguments= $#
-echo mango cost id $10
+echo mango cost is $10
+echo mango cost is '$10'
