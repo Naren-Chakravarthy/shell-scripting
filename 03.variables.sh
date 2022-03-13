@@ -25,6 +25,5 @@ naren=pandikukku
 echo geetha is a $naren
 c=30
 echo $c
-readonly c
 c=40
 echo $c
