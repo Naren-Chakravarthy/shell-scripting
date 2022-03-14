@@ -7,8 +7,8 @@
 # then
 # commands
 # fi
-
-if [ 1 -eq 1 ]
+a=1
+if [ a -eq 1 ]
 then
 echo "Hello"
 fi
