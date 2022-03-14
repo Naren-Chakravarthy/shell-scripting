@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="Conditons script">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/05.condition.sh" beforeDir="false" afterPath="$PROJECT_DIR$/05.condition.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,34 +35,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647067533490</updated>
-    </task>
-    <task id="LOCAL-00005" summary="created a first script for she bang demonstration">
-      <created>1647106037107</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1647106037107</updated>
-    </task>
-    <task id="LOCAL-00006" summary="created a first script for she bang demonstration">
-      <created>1647106408619</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1647106408619</updated>
-    </task>
-    <task id="LOCAL-00007" summary="created a first script for she bang demonstration">
-      <created>1647106495725</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1647106495725</updated>
-    </task>
-    <task id="LOCAL-00008" summary="created a first script for she bang demonstration">
-      <created>1647107363300</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1647107363300</updated>
     </task>
     <task id="LOCAL-00009" summary="created a first script for she bang demonstration">
       <created>1647108411224</created>
@@ -378,7 +351,35 @@
       <option name="project" value="LOCAL" />
       <updated>1647274236349</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Conditons script">
+      <created>1647274321329</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1647274321329</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Conditons script">
+      <created>1647274381016</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1647274381017</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Conditons script">
+      <created>1647274428752</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1647274428752</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Conditons script">
+      <created>1647274480698</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1647274480698</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
