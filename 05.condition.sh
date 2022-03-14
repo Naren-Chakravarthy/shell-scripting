@@ -8,11 +8,10 @@
 # commands
 # fi
 
-a=1
-if [$a -eq 1]
+if [1 -eq 1]
 then
-  echo "Hello"
-  fi
+echo "Hello"
+fi
 # 2.if else
 # syntax if
 # else if
