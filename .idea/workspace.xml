@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="Make file">
+    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="Making frontend components">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Roboshop/components/frontend.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Roboshop/components/frontend.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -354,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647251086381</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Making frontend components">
+      <created>1647252303535</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1647252303535</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -383,6 +389,7 @@
     <MESSAGE value="quotes concept" />
     <MESSAGE value="Roboshop Project Intiation" />
     <MESSAGE value="Make file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make file" />
+    <MESSAGE value="Making frontend components" />
+    <option name="LAST_COMMIT_MESSAGE" value="Making frontend components" />
   </component>
 </project>
