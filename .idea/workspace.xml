@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="variables concept">
+    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="Making Frontend components">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Roboshop/components/frontend.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Roboshop/components/frontend.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +34,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647067533490</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Adding a new sample file for demonstration">
-      <created>1647085789808</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1647085789808</updated>
     </task>
     <task id="LOCAL-00002" summary="Adding a one more line for demo">
       <created>1647088720165</created>
@@ -379,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647265991170</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Making Frontend components">
+      <created>1647267228209</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1647267228210</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -407,6 +406,7 @@
     <MESSAGE value="Input Special Variables" />
     <MESSAGE value="quotes concept" />
     <MESSAGE value="variables concept" />
-    <option name="LAST_COMMIT_MESSAGE" value="variables concept" />
+    <MESSAGE value="Making Frontend components" />
+    <option name="LAST_COMMIT_MESSAGE" value="Making Frontend components" />
   </component>
 </project>
