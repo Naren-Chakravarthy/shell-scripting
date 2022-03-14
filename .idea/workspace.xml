@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="quotes concept">
-      <change afterPath="$PROJECT_DIR$/Roboshop/components/cart.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Roboshop/components/frontend.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Roboshop/roboshop.sh" afterDir="false" />
+    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="Roboshop Project Intiation">
+      <change afterPath="$PROJECT_DIR$/Roboshop/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -342,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647187425877</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Roboshop Project Intiation">
+      <created>1647249885790</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1647249885791</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -369,6 +374,7 @@
     <MESSAGE value="variables, arrays" />
     <MESSAGE value="Input Special Variables" />
     <MESSAGE value="quotes concept" />
-    <option name="LAST_COMMIT_MESSAGE" value="quotes concept" />
+    <MESSAGE value="Roboshop Project Intiation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Roboshop Project Intiation" />
   </component>
 </project>
