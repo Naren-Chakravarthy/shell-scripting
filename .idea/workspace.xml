@@ -36,13 +36,6 @@
       <option name="presentableId" value="Default" />
       <updated>1647067533490</updated>
     </task>
-    <task id="LOCAL-00015" summary="creating a second script for print demo">
-      <created>1647109958965</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1647109958965</updated>
-    </task>
     <task id="LOCAL-00016" summary="creating a second script for print demo">
       <created>1647110308701</created>
       <option name="number" value="00016" />
@@ -379,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647280870954</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Conditons script">
+      <created>1647281868511</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1647281868511</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
