@@ -15,6 +15,13 @@ fi
 ##expressions are important
 #string tests
 # operators: ==, !=, -z
+# number tests
+# operators: -eq, -ne, -lt, -le, -gt, -ge
+# file tests
+# operators: https://tldp.org/LDP/abs/html/fto.html
+# -e--- to check file exists or not
+
+
 
 a=naren
 if [ "$a" == naren ]; then
@@ -46,3 +53,13 @@ fi
 
 
 # 3.else if
+# if [ expression1 ]; then
+# commands
+# elif [ expression2 ]; then
+# commands
+# elif [ expression3 ]: then
+# commands
+# else
+# commands
+# fi
+
