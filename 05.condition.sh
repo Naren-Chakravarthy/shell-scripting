@@ -21,7 +21,7 @@ if [ "$a" == naren ]; then
   echo "Botha are equal"
 fi
 
-if [ "$a" != naren ]; then
+if [ "$b" != naren ]; then
   echo "Both are not equal"
 fi
 
