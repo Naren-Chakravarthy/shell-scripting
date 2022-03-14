@@ -30,5 +30,19 @@ if [ -z "$b" ]; then
 fi
 
 # 2.if else
-# syntax if
-# else if
+# syntax
+# if [ expression ]; then
+# commands
+# else
+# commands
+# fi
+
+a=naren
+if [ "$a" == naren ]; then
+  echo "Botha are equal"
+else
+  echo "Both are not equal"
+fi
+
+
+# 3.else if
