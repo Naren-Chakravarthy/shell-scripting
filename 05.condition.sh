@@ -63,3 +63,13 @@ fi
 # commands
 # fi
 
+echo -e "\e[31mConditions practice\e[0m"
+id=0
+if [ "$id -eq 0" ]; then
+  echo -e "\e[32m installed successfully \e[0m"
+  else
+    echo -e "\e[32m installation failure \e[0m"
+    exit
+    fi
+
+
