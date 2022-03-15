@@ -7,7 +7,7 @@ if [ "$USER_ID -ne 0 " ]; then
 fi
 
 
-echo -e "\e[36m Installing nginx \e[0m "
+echo -e "\e[36m Installing nginx \e[0m"
 yum install nginx -y
 if [ "$? -eq 0" ]; then
   echo -e "\e[32mSUCCESS\e[0m"
