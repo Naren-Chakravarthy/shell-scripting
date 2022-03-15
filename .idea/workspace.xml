@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="Conditions script" />
+    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="building a programme" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,20 +32,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647067533490</updated>
-    </task>
-    <task id="LOCAL-00034" summary="variables declaration, Dynamic data scenario">
-      <created>1647181431938</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1647181431938</updated>
-    </task>
-    <task id="LOCAL-00035" summary="variables declaration, Dynamic data scenario">
-      <created>1647181618884</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1647181618884</updated>
     </task>
     <task id="LOCAL-00036" summary="variables, arrays">
       <created>1647181736275</created>
@@ -376,7 +362,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647357520314</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="building a programme">
+      <created>1647358230320</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1647358230320</updated>
+    </task>
+    <task id="LOCAL-00084" summary="building a programme">
+      <created>1647358255963</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1647358255963</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -409,6 +409,7 @@
     <MESSAGE value="Conditons script" />
     <MESSAGE value="to check components exists or not" />
     <MESSAGE value="Conditions script" />
-    <option name="LAST_COMMIT_MESSAGE" value="Conditions script" />
+    <MESSAGE value="building a programme" />
+    <option name="LAST_COMMIT_MESSAGE" value="building a programme" />
   </component>
 </project>
