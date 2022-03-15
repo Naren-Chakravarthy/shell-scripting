@@ -65,7 +65,7 @@ fi
 
 echo -e "\e[31mConditions practice\e[0m"
 id=1000
-if [ "$id -le 990" ]; then
+if [ "$id -le 0" ]; then
   echo -e "\e[32m installed successfully \e[0m"
   else
     echo -e "\e[32m installation failure \e[0m"
