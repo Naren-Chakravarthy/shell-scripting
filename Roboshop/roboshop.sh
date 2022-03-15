@@ -1,7 +1,9 @@
 #!/bin/bash
 
 if [  -e components/$1.sh ]; then
-echo "component frontend exist"
+echo -e "\e[32m component exist \e[0m"
+else
+echo -e "\e[31m component not exist \e[0m"
 exit
 fi
 
