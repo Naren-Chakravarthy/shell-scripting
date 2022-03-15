@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="building a programme" />
+    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="conditions script">
+      <change afterPath="$PROJECT_DIR$/07.functions.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,20 +35,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647067533490</updated>
-    </task>
-    <task id="LOCAL-00036" summary="variables, arrays">
-      <created>1647181736275</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1647181736290</updated>
-    </task>
-    <task id="LOCAL-00037" summary="variables, arrays">
-      <created>1647181775303</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1647181775303</updated>
     </task>
     <task id="LOCAL-00038" summary="variables, arrays">
       <created>1647181837928</created>
@@ -376,7 +365,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647358255963</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="building a programme">
+      <created>1647358274526</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1647358274526</updated>
+    </task>
+    <task id="LOCAL-00086" summary="conditions script">
+      <created>1647358505119</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1647358505119</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -410,6 +413,7 @@
     <MESSAGE value="to check components exists or not" />
     <MESSAGE value="Conditions script" />
     <MESSAGE value="building a programme" />
-    <option name="LAST_COMMIT_MESSAGE" value="building a programme" />
+    <MESSAGE value="conditions script" />
+    <option name="LAST_COMMIT_MESSAGE" value="conditions script" />
   </component>
 </project>
