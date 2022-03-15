@@ -3,7 +3,7 @@
 USER_ID=$(id -u)
 if [ "$USER_ID -ne 0 " ]; then
   echo You should run your script as a root or sudo user
-  exit 1
+  exit
 fi
 
 
@@ -13,7 +13,7 @@ if [ "$? -eq 0" ]; then
   echo -e "\e[32mSUCCESS\e[0m"
 else
   echo -e "\e[31mFAILURE\e[0m"
-  exit 2
+  exit
 fi
 
 
@@ -24,7 +24,7 @@ if [ "$? -eq 0" ]; then
   echo -e "\e[32mSUCCESS\e[0m"
 else
   echo -e "\e[31mFAILURE\e[0m"
-  exit 2
+  exit
 fi
 
 echo -e "\e[36m Downloading the nginx content \e[0m "
@@ -33,7 +33,7 @@ if [ "$? -eq 0" ]; then
   echo -e "\e[32mSUCCESS\e[0m"
 else
   echo -e "\e[31mFAILURE\e[0m"
-  exit 2
+  exit
 fi
 
 echo -e "\e[36m Cleanup old nginx content and extract new downloaded archive \e[0m "
@@ -48,7 +48,7 @@ if [ "$? -eq 0" ]; then
   echo -e "\e[32mSUCCESS\e[0m"
 else
   echo -e "\e[31mFAILURE\e[0m"
-  exit 2
+  exit
 fi
 
 
@@ -59,6 +59,6 @@ if [ "$? -eq 0" ]; then
   echo -e "\e[32mSUCCESS\e[0m"
 else
   echo -e "\e[31mFAILURE\e[0m"
-  exit 2
+  exit
 fi
 
