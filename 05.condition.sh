@@ -64,11 +64,11 @@ fi
 # fi
 
 echo -e "\e[34mConditions practice\e[0m"
-Name=Naren
+Name=Chakri
 if [ "$Name" == Naren ]; then
   echo -e "\e[32m Name is Naren \e[0m"
 else
-  echo -e "\e[31m Name is not Naren \e[0m"
+  echo -e "\e[31m Name is Chakri \e[0m"
     exit
     fi
 
