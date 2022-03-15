@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="to check components exists or not">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Roboshop/components/frontend.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Roboshop/components/frontend.sh" afterDir="false" />
-    </list>
+    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="Conditions script" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,13 +32,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647067533490</updated>
-    </task>
-    <task id="LOCAL-00033" summary="variables declaration, Dynamic data scenario">
-      <created>1647181382491</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1647181382491</updated>
     </task>
     <task id="LOCAL-00034" summary="variables declaration, Dynamic data scenario">
       <created>1647181431938</created>
@@ -379,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647356732904</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Conditions script">
+      <created>1647357520314</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1647357520314</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -411,6 +408,7 @@
     <MESSAGE value="to check components" />
     <MESSAGE value="Conditons script" />
     <MESSAGE value="to check components exists or not" />
-    <option name="LAST_COMMIT_MESSAGE" value="to check components exists or not" />
+    <MESSAGE value="Conditions script" />
+    <option name="LAST_COMMIT_MESSAGE" value="Conditions script" />
   </component>
 </project>
