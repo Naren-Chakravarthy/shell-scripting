@@ -37,8 +37,8 @@ else
 fi
 
 echo -e "\e[36m Cleanup old nginx content and extract new downloaded archive \e[0m "
-cd /usr/share/nginx/html
-rm -rf *
+rm -rf /usr/share/nginx/html/*
+cd /usr/share/nginx/html/
 unzip /tmp/frontend.zip
 mv frontend-main/* .
 mv static/* .
