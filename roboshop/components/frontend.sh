@@ -17,7 +17,7 @@ if [ "$USER_ID" -ne 0 ]; then
   exit 1
 fi
 LOG_FILE=/tmp/roboshop.log
-
+rm -f $LOG_FILE
 
 Print "installing nginx"
 yum install nginx -y >>$LOG_FILE
