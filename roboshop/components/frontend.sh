@@ -7,6 +7,10 @@ StatCheck() {
     exit 2
   fi
 }
+
+Print() {
+  echo -e "\e[36m "$1" \e[0m"
+}
 USER_ID=$(id -u)
 if [ "$USER_ID" -ne 0 ]; then
   echo You should run your script as a root or sudo user
@@ -14,23 +18,23 @@ if [ "$USER_ID" -ne 0 ]; then
 fi
 
 
-echo -e "\e[36m Installing nginx \e[0m"
+Print "installing nginx"
 yum install nginx -y
 StatCheck $?
 
 
-echo -e "\e[36m Starting the nginx \e[0m "
+Print "Starting the nginx"
 systemctl enable nginx
 systemctl start nginx
 StatCheck $?
 
 
-echo -e "\e[36m Downloading the nginx content \e[0m "
+Print "Downloading the nginx content"
 curl -f -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
 StatCheck $?
 
 
-echo -e "\e[36m Cleanup old nginx content and extract new downloaded archive \e[0m "
+Print "Cleanup old nginx content and extract new downloaded archive"
 rm -rf /usr/share/nginx/html/*
 cd /usr/share/nginx/html/
 unzip /tmp/frontend.zip
@@ -41,7 +45,7 @@ mv localhost.conf /etc/nginx/default.d/roboshop.conf
 StatCheck $?
 
 
-echo -e "\e[36m Restarting the nginx \e[0m "
+Print "Restarting the nginx"
 systemctl restart nginx
 systemctl enable nginx
 StatCheck $?
