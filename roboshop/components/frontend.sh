@@ -34,19 +34,24 @@ curl -f -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/f
 StatCheck $?
 
 
-Print "Cleanup old nginx content and extract new downloaded archive"
+Print "Cleanup old nginx content"
 rm -rf /usr/share/nginx/html/*
+StatCheck $?
+
 cd /usr/share/nginx/html/
-unzip /tmp/frontend.zip
-mv frontend-main/* .
-mv static/* .
-rm -rf frontend-main README.md
+
+
+Print "Extracting and Archive"
+unzip /tmp/frontend.zip && mv frontend-main/* . && mv static/* .
+StatCheck $?
+
+
+Print "Update Roboshop Configuration"
 mv localhost.conf /etc/nginx/default.d/roboshop.conf
 StatCheck $?
 
 
 Print "Restarting the nginx"
-systemctl restart nginx
-systemctl enable nginx
+systemctl restart nginx && systemctl enable nginx
 StatCheck $?
 
