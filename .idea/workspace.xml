@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="Functions concept" />
+    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="Functions concept">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Roboshop/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/roboshop/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Roboshop/components/cart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/roboshop/components/cart.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Roboshop/components/frontend.sh" beforeDir="false" afterPath="$PROJECT_DIR$/roboshop/components/frontend.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Roboshop/roboshop.sh" beforeDir="false" afterPath="$PROJECT_DIR$/roboshop/roboshop.sh" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,20 +38,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647067533490</updated>
-    </task>
-    <task id="LOCAL-00039" summary="variables, arrays">
-      <created>1647181881622</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1647181881622</updated>
-    </task>
-    <task id="LOCAL-00040" summary="variables, arrays">
-      <created>1647182589003</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1647182589003</updated>
     </task>
     <task id="LOCAL-00041" summary="Input Special Variables">
       <created>1647184909815</created>
@@ -376,7 +368,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647364936969</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="Functions concept">
+      <created>1647365340926</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1647365340926</updated>
+    </task>
+    <task id="LOCAL-00089" summary="Functions concept">
+      <created>1647365548602</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1647365548602</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
