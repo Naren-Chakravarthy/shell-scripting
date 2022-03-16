@@ -35,55 +35,6 @@
       <option name="presentableId" value="Default" />
       <updated>1647067533490</updated>
     </task>
-    <task id="LOCAL-00047" summary="quotes concept">
-      <created>1647187869610</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1647187869610</updated>
-    </task>
-    <task id="LOCAL-00048" summary="variables concept">
-      <created>1647265297388</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1647265297388</updated>
-    </task>
-    <task id="LOCAL-00049" summary="variables concept">
-      <created>1647265991170</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1647265991170</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Making Frontend components">
-      <created>1647267228209</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1647267228210</updated>
-    </task>
-    <task id="LOCAL-00051" summary="Making Frontend components">
-      <created>1647267748192</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1647267748192</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Conditons script">
-      <created>1647274092167</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1647274092168</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Conditons script">
-      <created>1647274236349</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1647274236349</updated>
-    </task>
     <task id="LOCAL-00054" summary="Conditons script">
       <created>1647274321329</created>
       <option name="number" value="00054" />
@@ -378,7 +329,56 @@
       <option name="project" value="LOCAL" />
       <updated>1647454249904</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1647455683399</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1647455683400</updated>
+    </task>
+    <task id="LOCAL-00097" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1647455733286</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1647455733286</updated>
+    </task>
+    <task id="LOCAL-00098" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1647455844237</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1647455844237</updated>
+    </task>
+    <task id="LOCAL-00099" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1647455922419</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1647455922419</updated>
+    </task>
+    <task id="LOCAL-00100" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1647456053589</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1647456053589</updated>
+    </task>
+    <task id="LOCAL-00101" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1647456088775</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1647456088775</updated>
+    </task>
+    <task id="LOCAL-00102" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1647456179583</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1647456179583</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
