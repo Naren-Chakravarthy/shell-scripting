@@ -1,9 +1,9 @@
 #!/bin/bash
 
 USER_ID=$(id -u)
-if [ "$USER_ID -ne 0 " ]; then
+if [ "$USER_ID" -ne 0 ]; then
   echo You should run your script as a root or sudo user
-  exit
+  exit 1
 fi
 
 
@@ -37,8 +37,8 @@ else
 fi
 
 echo -e "\e[36m Cleanup old nginx content and extract new downloaded archive \e[0m "
-cd /usr/share/nginx/html
-rm -rf *
+rm -rf /usr/share/nginx/html/*
+cd /usr/share/nginx/html/
 unzip /tmp/frontend.zip
 mv frontend-main/* .
 mv static/* .
