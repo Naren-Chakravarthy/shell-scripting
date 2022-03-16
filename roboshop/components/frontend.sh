@@ -13,7 +13,7 @@ if [ "$? -eq 0" ]; then
   echo -e "\e[32mSUCCESS\e[0m"
 else
   echo -e "\e[31mFAILURE\e[0m"
-  exit
+  exit 2
 fi
 
 
@@ -24,16 +24,16 @@ if [ "$? -eq 0" ]; then
   echo -e "\e[32mSUCCESS\e[0m"
 else
   echo -e "\e[31mFAILURE\e[0m"
-  exit
+  exit 2
 fi
 
 echo -e "\e[36m Downloading the nginx content \e[0m "
-curl -f -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
+curl -f -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zi"
 if [ "$? -eq 0" ]; then
   echo -e "\e[32mSUCCESS\e[0m"
 else
   echo -e "\e[31mFAILURE\e[0m"
-  exit
+  exit 2
 fi
 
 echo -e "\e[36m Cleanup old nginx content and extract new downloaded archive \e[0m "
@@ -48,7 +48,7 @@ if [ "$? -eq 0" ]; then
   echo -e "\e[32mSUCCESS\e[0m"
 else
   echo -e "\e[31mFAILURE\e[0m"
-  exit
+  exit 2
 fi
 
 
@@ -59,6 +59,6 @@ if [ "$? -eq 0" ]; then
   echo -e "\e[32mSUCCESS\e[0m"
 else
   echo -e "\e[31mFAILURE\e[0m"
-  exit
+  exit 2
 fi
 
