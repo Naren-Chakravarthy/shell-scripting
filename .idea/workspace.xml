@@ -35,13 +35,6 @@
       <option name="presentableId" value="Default" />
       <updated>1647067533490</updated>
     </task>
-    <task id="LOCAL-00059" summary="Conditons script">
-      <created>1647275644882</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1647275644882</updated>
-    </task>
     <task id="LOCAL-00060" summary="Conditons script">
       <created>1647276059418</created>
       <option name="number" value="00060" />
@@ -378,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647461585330</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1647462010423</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1647462010423</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
