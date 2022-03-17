@@ -34,20 +34,6 @@
       <option name="presentableId" value="Default" />
       <updated>1647067533490</updated>
     </task>
-    <task id="LOCAL-00086" summary="conditions script">
-      <created>1647358505119</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1647358505119</updated>
-    </task>
-    <task id="LOCAL-00087" summary="Functions concept">
-      <created>1647364936969</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1647364936969</updated>
-    </task>
     <task id="LOCAL-00088" summary="Functions concept">
       <created>1647365340926</created>
       <option name="number" value="00088" />
@@ -377,7 +363,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647530478790</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="mongodb setup">
+      <created>1647530678472</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1647530678472</updated>
+    </task>
+    <task id="LOCAL-00136" summary="mongodb setup">
+      <created>1647530699224</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1647530699224</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
