@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="mongodb setup" />
+    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="Merge remote-tracking branch 'origin/main'" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +9,7 @@
   </component>
   <component name="Git.Settings">
     <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -33,41 +34,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647067533490</updated>
-    </task>
-    <task id="LOCAL-00092" summary="Merge remote-tracking branch 'origin/main'">
-      <created>1647450472170</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1647450472171</updated>
-    </task>
-    <task id="LOCAL-00093" summary="Merge remote-tracking branch 'origin/main'">
-      <created>1647450600398</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1647450600398</updated>
-    </task>
-    <task id="LOCAL-00094" summary="Merge remote-tracking branch 'origin/main'">
-      <created>1647451597147</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1647451597147</updated>
-    </task>
-    <task id="LOCAL-00095" summary="Merge remote-tracking branch 'origin/main'">
-      <created>1647454249903</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1647454249904</updated>
-    </task>
-    <task id="LOCAL-00096" summary="Merge remote-tracking branch 'origin/main'">
-      <created>1647455683399</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1647455683400</updated>
     </task>
     <task id="LOCAL-00097" summary="Merge remote-tracking branch 'origin/main'">
       <created>1647455733286</created>
@@ -377,7 +343,42 @@
       <option name="project" value="LOCAL" />
       <updated>1647531781203</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="mongodb setup">
+      <created>1647531865790</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1647531865790</updated>
+    </task>
+    <task id="LOCAL-00142" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1647531921318</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1647531921318</updated>
+    </task>
+    <task id="LOCAL-00143" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1647531951485</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1647531951485</updated>
+    </task>
+    <task id="LOCAL-00144" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1647532011568</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1647532011568</updated>
+    </task>
+    <task id="LOCAL-00145" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1647532135618</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1647532135618</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -392,7 +393,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding a new sample file for demonstration" />
     <MESSAGE value="Adding a one more line for demo" />
     <MESSAGE value="Adding a second line for demo" />
     <MESSAGE value="creating a first project for she bang demonstration" />
@@ -415,8 +415,9 @@
     <MESSAGE value="Functions concept" />
     <MESSAGE value="Makefile" />
     <MESSAGE value="Project intiation" />
-    <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
     <MESSAGE value="mongodb setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="mongodb setup" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'" />
   </component>
 </project>
