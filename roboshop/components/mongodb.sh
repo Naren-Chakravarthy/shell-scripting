@@ -33,3 +33,4 @@ systemctl enable mongod &>>$LOG_FILE && systemctl start mongod &>>$LOG_FILE
 StatCheck $?
 
 
+
