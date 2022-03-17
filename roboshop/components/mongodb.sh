@@ -32,5 +32,9 @@ Print "Starting the mongodb"
 systemctl enable mongod &>>$LOG_FILE && systemctl start mongod &>>$LOG_FILE
 StatCheck $?
 
+Print "Update mongodb listen IP Adress"
+sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf
+StatCheck $?
+
 
 

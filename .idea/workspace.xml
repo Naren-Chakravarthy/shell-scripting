@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="mongodb setup">
+    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="Merge remote-tracking branch 'origin/main'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/roboshop/components/mongodb.sh" beforeDir="false" afterPath="$PROJECT_DIR$/roboshop/components/mongodb.sh" afterDir="false" />
     </list>
@@ -35,27 +35,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647067533490</updated>
-    </task>
-    <task id="LOCAL-00070" summary="Conditons script">
-      <created>1647347101510</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1647347101510</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Conditons script">
-      <created>1647354660913</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1647354660913</updated>
-    </task>
-    <task id="LOCAL-00072" summary="Conditons script">
-      <created>1647354839525</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1647354839525</updated>
     </task>
     <task id="LOCAL-00073" summary="Conditons script">
       <created>1647354972492</created>
@@ -379,7 +358,28 @@
       <option name="project" value="LOCAL" />
       <updated>1647527571250</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1647527802540</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1647527802540</updated>
+    </task>
+    <task id="LOCAL-00120" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1647527841247</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1647527841247</updated>
+    </task>
+    <task id="LOCAL-00121" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1647527905207</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1647527905207</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -417,8 +417,8 @@
     <MESSAGE value="Functions concept" />
     <MESSAGE value="Makefile" />
     <MESSAGE value="Project intiation" />
-    <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
     <MESSAGE value="mongodb setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'" />
   </component>
 </project>
