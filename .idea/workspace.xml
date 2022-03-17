@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="Merge remote-tracking branch 'origin/main'">
-      <change afterPath="$PROJECT_DIR$/roboshop/components/common.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roboshop/components/mongodb.sh" beforeDir="false" afterPath="$PROJECT_DIR$/roboshop/components/mongodb.sh" afterDir="false" />
-    </list>
+    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="mongodb setup" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -35,41 +33,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647067533490</updated>
-    </task>
-    <task id="LOCAL-00081" summary="to check components exists or not">
-      <created>1647356732904</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1647356732904</updated>
-    </task>
-    <task id="LOCAL-00082" summary="Conditions script">
-      <created>1647357520314</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1647357520314</updated>
-    </task>
-    <task id="LOCAL-00083" summary="building a programme">
-      <created>1647358230320</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1647358230320</updated>
-    </task>
-    <task id="LOCAL-00084" summary="building a programme">
-      <created>1647358255963</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1647358255963</updated>
-    </task>
-    <task id="LOCAL-00085" summary="building a programme">
-      <created>1647358274526</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1647358274526</updated>
     </task>
     <task id="LOCAL-00086" summary="conditions script">
       <created>1647358505119</created>
@@ -379,7 +342,42 @@
       <option name="project" value="LOCAL" />
       <updated>1647529880356</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1647530221547</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1647530221547</updated>
+    </task>
+    <task id="LOCAL-00131" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1647530256862</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1647530256863</updated>
+    </task>
+    <task id="LOCAL-00132" summary="mongodb setup">
+      <created>1647530327012</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1647530327012</updated>
+    </task>
+    <task id="LOCAL-00133" summary="mongodb setup">
+      <created>1647530340207</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1647530340207</updated>
+    </task>
+    <task id="LOCAL-00134" summary="mongodb setup">
+      <created>1647530478789</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1647530478790</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -417,8 +415,8 @@
     <MESSAGE value="Functions concept" />
     <MESSAGE value="Makefile" />
     <MESSAGE value="Project intiation" />
-    <MESSAGE value="mongodb setup" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'" />
+    <MESSAGE value="mongodb setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="mongodb setup" />
   </component>
 </project>
