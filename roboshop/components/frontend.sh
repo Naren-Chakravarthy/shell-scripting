@@ -32,7 +32,8 @@ StatCheck $?
 
 Print "Update Roboshop Configuration"
 mv localhost.conf /etc/nginx/default.d/roboshop.conf &>>$LOG_FILE
-sed -i -e '/catalogue/s/localhost/catalogue.roboshop.internal/' /etc/nginx/default.d/roboshop.conf
+sed -i -e '/catalogue/s/localhost/catalogue.roboshop.internal/' /etc/nginx/default.d/roboshop.conf &>>$LOG_FILE
+sed -i -e '/user/s/localhost/user.roboshop.internal/' /etc/nginx/default.d/roboshop.conf &>>$LOG_FILE
 StatCheck $?
 
 
