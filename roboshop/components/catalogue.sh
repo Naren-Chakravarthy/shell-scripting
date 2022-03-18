@@ -10,6 +10,10 @@ Print"Installing NodeJS"
 yum install nodejs gcc-c++ -y &>>$LOG_FILE
 StatCheck $?
 
+Print"Add application user"
+useradd $APP_USER &>>$LOG_FILE
+StatCheck $?
+
 Print "Download app Component"
 curl -f -s -L -o /tmp/catalogue.zip "https://github.com/roboshop-devops-project/catalogue/archive/main.zip" &>>$LOG_FILE
 StatCheck $?
