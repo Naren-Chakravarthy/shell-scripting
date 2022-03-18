@@ -7,7 +7,7 @@ curl -fsSL https://rpm.nodesource.com/setup_lts.x | bash - &>>$LOG_FILE
 StatusCheck $?
 
 
-Print "Installing NodeJS "
+Print "Installing NodeJS"
 yum install nodejs gcc-c++ -y &>>$LOG_FILE
 StatusCheck $?
 
