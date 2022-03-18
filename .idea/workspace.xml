@@ -43,13 +43,6 @@
       <option name="presentableId" value="Default" />
       <updated>1647067533490</updated>
     </task>
-    <task id="LOCAL-00137" summary="mongodb setup">
-      <created>1647531284780</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1647531284782</updated>
-    </task>
     <task id="LOCAL-00138" summary="mongodb setup">
       <created>1647531398922</created>
       <option name="number" value="00138" />
@@ -386,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647628713972</updated>
     </task>
-    <option name="localTasksCounter" value="186" />
+    <task id="LOCAL-00186" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1647629091526</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1647629091526</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
