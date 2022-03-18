@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source components/redis.sh
+source components/common.sh
 
 
 Print "Configuring Yum repos"
