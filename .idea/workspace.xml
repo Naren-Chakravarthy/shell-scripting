@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="Merge remote-tracking branch 'origin/main'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roboshop/components/mongodb.sh" beforeDir="false" afterPath="$PROJECT_DIR$/roboshop/components/mongodb.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,13 +36,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647067533490</updated>
-    </task>
-    <task id="LOCAL-00102" summary="Merge remote-tracking branch 'origin/main'">
-      <created>1647456179583</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1647456179583</updated>
     </task>
     <task id="LOCAL-00103" summary="Merge remote-tracking branch 'origin/main'">
       <created>1647458648131</created>
@@ -381,7 +373,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647538729607</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1647538793866</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1647538793866</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
