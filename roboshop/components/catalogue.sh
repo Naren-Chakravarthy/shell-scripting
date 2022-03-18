@@ -11,7 +11,7 @@ yum install nodejs gcc-c++ -y &>>$LOG_FILE
 StatCheck $?
 
 Print "Add application user"
-useradd $APP_USER &>>$LOG_FILE
+useradd $APP_USER
 StatCheck $?
 
 Print "Download app Component"
