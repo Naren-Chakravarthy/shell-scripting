@@ -1,42 +1,54 @@
 #!/bin/bash
 
+source components/common.sh
 
-# curl -fsSL https://rpm.nodesource.com/setup_lts.x | bash -
-# yum install nodejs gcc-c++ -y
-```
+Print "Setup Yum repos"
+curl -fsSL https://rpm.nodesource.com/setup_lts.x | bash - &>>$LOG_FILE
+StatusCheck $?
 
-#1. Let's now set up the User application.
 
-#As part of operating system standards, we run all the applications and databases as a normal user but not with root user.
+Print "Installing NodeJS "
+yum install nodejs gcc-c++ -y &>>$LOG_FILE
+StatusCheck $?
 
-#So to run the User service we choose to run as a normal user and that user name should be more relevant to the project. Hence we will use `roboshop` as the username to run the service.
+Print "Adding Application user"
+id $APP_USER &>>$LOG_FILE
+if [ "$?" -ne 0 ]; then
+useradd $APP_USER &>>$LOG_FILE
+fi
+StatusCheck $?
 
-#```bash
-# useradd roboshop
-```
+Print "Downloading the app content"
+curl -f -s -L -o /tmp/user.zip "https://github.com/roboshop-devops-project/user/archive/main.zip"
+StatusCheck $?
 
-#1. So let's switch to the `roboshop` user and run the following commands.
+Print "Cleanup old content"
+rm -rf /home/$APP_USER/user &>>$LOG_FILE
+StatusCheck $?
 
-```bash
-$ curl -s -L -o /tmp/user.zip "https://github.com/roboshop-devops-project/user/archive/main.zip"
-$ cd /home/roboshop
-$ unzip /tmp/user.zip
-$ mv user-main user
-$ cd /home/roboshop/user
-$ npm install
-```
+Print "extract app content"
+cd /home/$APP_USER &>>$LODG_FILE && unzip /tmp/user.zip &>>$LOG_FILE && mv user-main user &>>$LOG_FILE
+StatusCheck $?
 
-1. Update SystemD service file,
+Print "Installing npm content"
+cd /home/roboshop/user &>>$LOG_FILE && npm install &>>$LOG_FILE
+StatusCheck $?
 
-    Update `REDIS_ENDPOINT` with Redis Server IP
 
-    Update `MONGO_ENDPOINT` with MongoDB Server IP
+Print "Fixing the permissions"
+chown -R $APP_USER:$APP_USER /home/$APP_USER
+StatCheck $?
 
-2. Now, lets set up the service with systemctl.
+Print "Setup systemd file"
+sed -i -e 's/REDIS_ENDPOINT/user.roboshop.internal/' /home/$APP_USER/user/systemd.service &>>$LOG_FILE
+sed -i -e 's/MONGO_ENDPOINT/mongodb.roboshop.internal/' /home/$APP_USER/mongodb/systemd.service &>>$LOG_FILE
 
-```bash
+
+#1. Update SystemD service file,
+#   Update `REDIS_ENDPOINT` with Redis Server IP
+
+#  Update `MONGO_ENDPOINT` with MongoDB Server IP
 # mv /home/roboshop/user/systemd.service /etc/systemd/system/user.service
 # systemctl daemon-reload
 # systemctl start user
 # systemctl enable user
-```
