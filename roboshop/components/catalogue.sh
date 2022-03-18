@@ -32,3 +32,8 @@ StatCheck $?
 Print "Install app Dependencies"
 cd /home/$APP_USER/catalogue &>>$LOG_FILE && npm install &>>$LOG_FILE
 StatCheck $?
+
+Print "Fixing the permissions"
+chown -R $APP_USER:$APP_USER /home/$APP_USER
+StatCheck $?
+
