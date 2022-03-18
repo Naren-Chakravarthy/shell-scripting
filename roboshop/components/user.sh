@@ -42,13 +42,11 @@ StatCheck $?
 Print "Setup systemd file"
 sed -i -e 's/REDIS_ENDPOINT/user.roboshop.internal/' /home/$APP_USER/user/systemd.service &>>$LOG_FILE
 sed -i -e 's/MONGO_ENDPOINT/mongodb.roboshop.internal/' /home/$APP_USER/user/systemd.service &>>$LOG_FILE
+mv /home/$APP_USER/user/systemd.service /etc/systemd/system/user.service &>>$LOG_FILE
+StatCheck $?
+
+Print "Restart user service"
+systemctl daemon-reload &>>$LOG_FILE && systemctl start user &>>$LOG_FILE && systemctl enable user &>>$LOG_FILE
+StatCheck $?
 
 
-#1. Update SystemD service file,
-#   Update `REDIS_ENDPOINT` with Redis Server IP
-
-#  Update `MONGO_ENDPOINT` with MongoDB Server IP
-# mv /home/roboshop/user/systemd.service /etc/systemd/system/user.service
-# systemctl daemon-reload
-# systemctl start user
-# systemctl enable user
