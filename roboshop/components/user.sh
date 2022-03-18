@@ -4,35 +4,35 @@ source components/common.sh
 
 Print "Configure Yum repos"
 curl -fsSL https://rpm.nodesource.com/setup_lts.x | bash - &>>$LOG_FILE
-StatusCheck $?
+StatCheck $?
 
 
 Print "Installing NodeJS"
 yum install nodejs gcc-c++ -y &>>$LOG_FILE
-StatusCheck $?
+StatCheck $?
 
 Print "Adding Application user"
 id $APP_USER &>>$LOG_FILE
 if [ "$?" -ne 0 ]; then
 useradd $APP_USER &>>$LOG_FILE
 fi
-StatusCheck $?
+StatCheck $?
 
 Print "Downloading the app content"
 curl -f -s -L -o /tmp/user.zip "https://github.com/roboshop-devops-project/user/archive/main.zip"
-StatusCheck $?
+StatCheck $?
 
 Print "Cleanup old content"
 rm -rf /home/$APP_USER/user &>>$LOG_FILE
-StatusCheck $?
+StatCheck $?
 
 Print "extract app content"
 cd /home/$APP_USER &>>$LODG_FILE && unzip /tmp/user.zip &>>$LOG_FILE && mv user-main user &>>$LOG_FILE
-StatusCheck $?
+StatCheck $?
 
 Print "Installing npm content"
 cd /home/roboshop/user &>>$LOG_FILE && npm install &>>$LOG_FILE
-StatusCheck $?
+StatCheck $?
 
 
 Print "Fixing the permissions"
