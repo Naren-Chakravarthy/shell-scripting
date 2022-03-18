@@ -41,7 +41,7 @@ StatCheck $?
 
 Print "Setup systemd file"
 sed -i -e 's/REDIS_ENDPOINT/user.roboshop.internal/' /home/$APP_USER/user/systemd.service &>>$LOG_FILE
-sed -i -e 's/MONGO_ENDPOINT/mongodb.roboshop.internal/' /home/$APP_USER/mongodb/systemd.service &>>$LOG_FILE
+sed -i -e 's/MONGO_ENDPOINT/mongodb.roboshop.internal/' /home/$APP_USER/user/systemd.service &>>$LOG_FILE
 
 
 #1. Update SystemD service file,
