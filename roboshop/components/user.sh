@@ -27,7 +27,7 @@ rm -rf /home/$APP_USER/user &>>$LOG_FILE
 StatCheck $?
 
 Print "extract app content"
-cd /home/$APP_USER &>>$LODG_FILE && unzip /tmp/user.zip &>>$LOG_FILE && mv user-main user &>>$LOG_FILE
+cd /home/$APP_USER &>>$LOG_FILE && unzip /tmp/user.zip &>>$LOG_FILE && mv user-main user &>>$LOG_FILE
 StatCheck $?
 
 Print "Installing npm content"
