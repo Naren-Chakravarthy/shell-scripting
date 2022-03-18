@@ -66,6 +66,8 @@ NODEJS(){
   sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
   sed -i -e 's/REDIS_ENDPOINT/user.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
   sed -i -e 's/MONGO_ENDPOINT/mongodb.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
+  sed -i -e 's/REDIS_ENDPOINT/redis.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
+  sed -i -e 's/CATALOGUE_ENDPOINT/catalogue.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
   mv /home/$APP_USER/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.service &>>$LOG_FILE
   StatCheck $?
 
