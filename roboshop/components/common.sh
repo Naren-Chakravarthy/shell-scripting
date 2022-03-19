@@ -54,6 +54,7 @@ NODEJS(){
   mv $COMPONENT-main $COMPONENT &>>$LOG_FILE
   StatCheck $?
 
+
   Print "Installing npm content"
   cd /home/roboshop/$COMPONENT &>>$LOG_FILE && npm install &>>$LOG_FILE
   StatCheck $?
