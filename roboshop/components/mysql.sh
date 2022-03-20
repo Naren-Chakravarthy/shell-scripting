@@ -19,7 +19,7 @@ if [ "$?" -ne 0 ]; then
 Print "Change default root password"
 echo "SET PASSWORD FOR 'root'@'localhost' = PASSWORD('Roboshop@1');" >/tmp/rootpass.sql
 DEFAULT_ROOT_PASSWORD=$(sudo grep 'temporary password' /var/log/mysqld.log | awk '{print $NF}') &>>$LOG_FILE
-mysql --connect-expired-password -uroot -p"${DEFAULT_ROOT_PASSWORD}" </tmp/rootpass.sql
+mysql --connect-expired-password -uroot -p"${DEFAULT_ROOT_PASSWORD}" </tmp/rootpass.sql &>>$LOG_FILE
 StatCheck $?
 fi
 
@@ -27,7 +27,7 @@ echo show plugins | mysql -uroot -pRoboshop@1 2>>$LOG_FILE | grep validate_passw
 if [ "$?" -eq 0 ]; then
 Print "Uninstall password validate plugin"
 echo 'uninstall plugin validate_password;' >>/tmp/pass-validate.sql
-mysql --connect-expired-password -uroot -p"${DEFAULT_ROOT_PASSWORD}" </tmp/rootpass.sql
+mysql --connect-expired-password -uroot -pRoboshop@1 </tmp/rootpass.sql &>>$LOG_FILE
 StatCheck $?
 fi
 
