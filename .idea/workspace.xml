@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="Merge remote-tracking branch 'origin/main'">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roboshop/components/mysql.sh" beforeDir="false" afterPath="$PROJECT_DIR$/roboshop/components/mysql.sh" afterDir="false" />
-    </list>
+    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="Merge remote-tracking branch 'origin/main'" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,27 +42,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647067533490</updated>
-    </task>
-    <task id="LOCAL-00169" summary="Merge remote-tracking branch 'origin/main'">
-      <created>1647588692369</created>
-      <option name="number" value="00169" />
-      <option name="presentableId" value="LOCAL-00169" />
-      <option name="project" value="LOCAL" />
-      <updated>1647588692369</updated>
-    </task>
-    <task id="LOCAL-00170" summary="Merge remote-tracking branch 'origin/main'">
-      <created>1647589320932</created>
-      <option name="number" value="00170" />
-      <option name="presentableId" value="LOCAL-00170" />
-      <option name="project" value="LOCAL" />
-      <updated>1647589320932</updated>
-    </task>
-    <task id="LOCAL-00171" summary="Merge remote-tracking branch 'origin/main'">
-      <created>1647590556367</created>
-      <option name="number" value="00171" />
-      <option name="presentableId" value="LOCAL-00171" />
-      <option name="project" value="LOCAL" />
-      <updated>1647590556367</updated>
     </task>
     <task id="LOCAL-00172" summary="Merge remote-tracking branch 'origin/main'">
       <created>1647590972791</created>
@@ -389,7 +365,28 @@
       <option name="project" value="LOCAL" />
       <updated>1647803083556</updated>
     </task>
-    <option name="localTasksCounter" value="218" />
+    <task id="LOCAL-00218" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1647803496895</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1647803496895</updated>
+    </task>
+    <task id="LOCAL-00219" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1647803593077</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1647803593077</updated>
+    </task>
+    <task id="LOCAL-00220" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1647803706047</created>
+      <option name="number" value="00220" />
+      <option name="presentableId" value="LOCAL-00220" />
+      <option name="project" value="LOCAL" />
+      <updated>1647803706047</updated>
+    </task>
+    <option name="localTasksCounter" value="221" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
