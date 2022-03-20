@@ -32,11 +32,11 @@ StatCheck $?
 
 Print "Update Roboshop Configuration"
 mv localhost.conf /etc/nginx/default.d/roboshop.conf &>>$LOG_FILE
-sed -i -e '/catalogue/s/localhost/catalogue.roboshop.internal/' /etc/nginx/default.d/roboshop.conf &>>$LOG_FILE
-sed -i -e '/user/s/localhost/user.roboshop.internal/' /etc/nginx/default.d/roboshop.conf &>>$LOG_FILE
-sed -i -e '/cart/s/localhost/cart.roboshop.internal/' /etc/nginx/default.d/roboshop.conf &>>$LOG_FILE
+for components in catalogue user cart; do
+echo -e "updating $components configuration"
+sed -i -e '/$components/s/localhost/$components.roboshop.internal/' /etc/nginx/default.d/roboshop.conf &>>$LOG_FILE
 StatCheck $?
-
+done
 
 Print "Restarting the nginx"
 systemctl restart nginx >>$LOG_FILE && systemctl enable nginx >>$LOG_FILE
