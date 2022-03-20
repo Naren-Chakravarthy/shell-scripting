@@ -42,7 +42,7 @@ NODEJS(){
   StatCheck $?
 
   Print "Downloading the app content"
-  curl -f -s -L -o /tmp/$COMPONENT.zip "https://github.com/roboshop-devops-project/user/archive/main.zip"
+  curl -f -s -L -o /tmp/$COMPONENT.zip "https://github.com/roboshop-devops-project/$COMPONENT/archive/main.zip"
   StatCheck $?
 
   Print "Cleanup old content"
