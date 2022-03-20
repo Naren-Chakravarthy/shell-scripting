@@ -46,27 +46,6 @@
       <option name="presentableId" value="Default" />
       <updated>1647067533490</updated>
     </task>
-    <task id="LOCAL-00159" summary="Merge remote-tracking branch 'origin/main'">
-      <created>1647573376286</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1647573376286</updated>
-    </task>
-    <task id="LOCAL-00160" summary="Merge remote-tracking branch 'origin/main'">
-      <created>1647573440034</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1647573440034</updated>
-    </task>
-    <task id="LOCAL-00161" summary="Merge remote-tracking branch 'origin/main'">
-      <created>1647573557650</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1647573557650</updated>
-    </task>
     <task id="LOCAL-00162" summary="Merge remote-tracking branch 'origin/main'">
       <created>1647573898936</created>
       <option name="number" value="00162" />
@@ -389,7 +368,28 @@
       <option name="project" value="LOCAL" />
       <updated>1647799468286</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1647801117296</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1647801117296</updated>
+    </task>
+    <task id="LOCAL-00209" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1647801249174</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1647801249174</updated>
+    </task>
+    <task id="LOCAL-00210" summary="Merge remote-tracking branch 'origin/main'">
+      <created>1647801362657</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1647801362657</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
