@@ -40,6 +40,6 @@ cd /tmp && unzip -o mysql.zip &>>$LOG_FILE
 StatCheck $?
 
 Print "Load Schema"
-cd mysql-main && mysql -u root -pRoboshop@1 <shipping.sql &>>$LOG_FILE
+cd mysql-main && mysql -uroot -pRoboshop@1 <shipping.sql &>>$LOG_FILE
 StatCheck $?
 
