@@ -23,6 +23,14 @@ mysql --connect-expired-password -uroot -p"${DEFAULT_ROOT_PASSWORD}" </tmp/rootp
 StatCheck $?
 fi
 
+echo show plugins | mysql -uroot -pRoboshop@1 2>>$LOG_FILE | grep validate_password
+if [ "$?" -eq 0 ]; then
+Print "Uninstall password validate plugin"
+echo 'uninstall plugin validate_password;' >>/tmp/pass-validate.sql
+mysql --connect-expired-password -uroot -p"${DEFAULT_ROOT_PASSWORD}" </tmp/rootpass.sql
+StatCheck $?
+fi
+
 
 #Now a default root password will be generated and given in the log file
 # grep temp /var/log/mysqld.log
