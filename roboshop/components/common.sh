@@ -23,6 +23,48 @@ rm -f $LOG_FILE
 
 APP_USER=roboshop
 
+APP_SETUP() {
+  Print "Adding Application user"
+    id $APP_USER &>>$LOG_FILE
+    if [ "$?" -ne 0 ]; then
+    useradd $APP_USER &>>$LOG_FILE
+    fi
+    StatCheck $?
+
+   Print "Downloading the app content"
+    curl -f -s -L -o /tmp/$COMPONENT.zip "https://github.com/$APP_USER-devops-project/$COMPONENT/archive/main.zip"
+    StatCheck $?
+
+    Print "Cleanup old content"
+    rm -rf /home/$APP_USER/$COMPONENT &>>$LOG_FILE
+    StatCheck $?
+
+    Print "extract app content"
+    cd /home/$APP_USER &>>$LOG_FILE && unzip -o /tmp/$COMPONENT.zip &>>$LOG_FILE && mv $COMPONENT-main $COMPONENT &>>$LOG_FILE
+    StatCheck $?
+}
+
+SERVICE_SETUP() {
+
+    Print "Fixing the permissions"
+    chown -R $APP_USER:$APP_USER /home/$APP_USER
+    StatCheck $?
+
+    Print "Setup systemd file"
+    sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
+    sed -i -e 's/REDIS_ENDPOINT/user.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
+    sed -i -e 's/MONGO_ENDPOINT/mongodb.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
+    sed -i -e 's/REDIS_ENDPOINT/redis.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
+    sed -i -e 's/CATALOGUE_ENDPOINT/catalogue.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
+    sed -i -e 's/CARTENDPOINT/cart.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
+    sed -i -e 's/DBHOST/mysql.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
+    mv /home/$APP_USER/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.service &>>$LOG_FILE
+    StatCheck $?
+
+    Print "Restart $COMPONENT service"
+    systemctl daemon-reload &>>$LOG_FILE && systemctl start $COMPONENT &>>$LOG_FILE && systemctl enable $COMPONENT &>>$LOG_FILE
+    StatCheck $?
+}
 #FUNCTION
 NODEJS(){
   Print "Configure Yum repos"
@@ -34,45 +76,24 @@ NODEJS(){
   yum install nodejs gcc-c++ -y &>>$LOG_FILE
   StatCheck $?
 
-  Print "Adding Application user"
-  id $APP_USER &>>$LOG_FILE
-  if [ "$?" -ne 0 ]; then
-  useradd $APP_USER &>>$LOG_FILE
-  fi
-  StatCheck $?
-
-  Print "Downloading the app content"
-  curl -f -s -L -o /tmp/$COMPONENT.zip "https://github.com/$APP_USER-devops-project/$COMPONENT/archive/main.zip"
-  StatCheck $?
-
-  Print "Cleanup old content"
-  rm -rf /home/$APP_USER/$COMPONENT &>>$LOG_FILE
-  StatCheck $?
-
-  Print "extract app content"
-  cd /home/$APP_USER &>>$LOG_FILE && unzip -o /tmp/$COMPONENT.zip &>>$LOG_FILE && mv $COMPONENT-main $COMPONENT &>>$LOG_FILE
-  StatCheck $?
-
+  APP_SETUP
 
   Print "Installing npm content"
-  cd /home/roboshop/$COMPONENT &>>$LOG_FILE && npm install &>>$LOG_FILE
+  cd /home/$APP_USER/$COMPONENT &>>$LOG_FILE && npm install &>>$LOG_FILE
   StatCheck $?
 
+  SERVICE_SETUP
+}
 
-  Print "Fixing the permissions"
-  chown -R $APP_USER:$APP_USER /home/$APP_USER
+MAVEN() {
+
+  Print "Install maven"
+  yum install maven -y &>>$LOG_FILE
   StatCheck $?
 
-  Print "Setup systemd file"
-  sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
-  sed -i -e 's/REDIS_ENDPOINT/user.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
-  sed -i -e 's/MONGO_ENDPOINT/mongodb.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
-  sed -i -e 's/REDIS_ENDPOINT/redis.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
-  sed -i -e 's/CATALOGUE_ENDPOINT/catalogue.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
-  mv /home/$APP_USER/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.service &>>$LOG_FILE
-  StatCheck $?
+  APP_SETUP
 
-  Print "Restart $COMPONENT service"
-  systemctl daemon-reload &>>$LOG_FILE && systemctl start $COMPONENT &>>$LOG_FILE && systemctl enable $COMPONENT &>>$LOG_FILE
-  StatCheck $?
+  Print "maven packaging"
+  cd /home/$APP_USER/$COMPONENT &>>$LOG_FILE && mvn clean package &>>$LOG_FILE && mv target/shipping-1.0.jar shipping.jar &>>$LOG_FILE
+  SERVICE_SETUP
 }
