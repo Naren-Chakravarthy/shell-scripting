@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source components/cammon.sh
+source components/common.sh
 
 COMPONENT=shipping
 
