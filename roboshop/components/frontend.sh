@@ -24,7 +24,7 @@ StatCheck $?
 
 
 Print "Extracting and Archive"
-cd /usr/share/nginx/html &>>$LOG_FILE && unzip /tmp/frontend.zip &>>$LOG_FILE && mv frontend-main/* . &>>$LOG_FILE && mv static/* . &>>$LOG_FILE
+cd /usr/share/nginx/html &>>$LOG_FILE && unzip -o /tmp/frontend.zip &>>$LOG_FILE && mv frontend-main/* . &>>$LOG_FILE && mv static/* . &>>$LOG_FILE
 StatCheck $?
 
 
