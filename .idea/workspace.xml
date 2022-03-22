@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="Rabbitmq script">
+      <change afterPath="$PROJECT_DIR$/roboshop/components/payment.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roboshop/components/rabbitmq.sh" beforeDir="false" afterPath="$PROJECT_DIR$/roboshop/components/rabbitmq.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roboshop/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/roboshop/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roboshop/components/common.sh" beforeDir="false" afterPath="$PROJECT_DIR$/roboshop/components/common.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +41,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647067533490</updated>
-    </task>
-    <task id="LOCAL-00006" summary="created a first script for she bang demonstration">
-      <created>1647106408619</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1647106408619</updated>
     </task>
     <task id="LOCAL-00007" summary="created a first script for she bang demonstration">
       <created>1647106495725</created>
@@ -383,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647943843511</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Rabbitmq script">
+      <created>1647944738277</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1647944738278</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
