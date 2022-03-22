@@ -10,7 +10,7 @@ StatCheck() {
 }
 
 Print() {
-  echo -e "\n-----------------$1-------------------" &>>$LOG_FILE
+  echo -e "\n-----------------$1-------------------" &>>${LOG_FILE}
   echo -e "\e[36m "$1" \e[0m"
 }
 USER_ID=$(id -u)
@@ -19,37 +19,37 @@ if [ "$USER_ID" -ne 0 ]; then
   exit 1
 fi
 LOG_FILE=/tmp/roboshop.log
-rm -f $LOG_FILE
+rm -f ${LOG_FILE}
 
 APP_USER=roboshop
 
 APP_SETUP() {
 
-    id $APP_USER &>>$LOG_FILE
+    id ${APP_USER} &>>${LOG_FILE}
     if [ "$?" -ne 0 ]; then
       Print "Adding Application user"
-      useradd $APP_USER &>>$LOG_FILE
+      useradd ${APP_USER} &>>${LOG_FILE}
       StatCheck $?
     fi
 
 
    Print "Downloading the app content"
-    curl -f -s -L -o /tmp/$COMPONENT.zip "https://github.com/roboshop-devops-project/$COMPONENT/archive/main.zip" &>>$LOG_FILE
+    curl -f -s -L -o /tmp/${COMPONENT}.zip "https://github.com/roboshop-devops-project/${COMPONENT}/archive/main.zip" &>>${LOG_FILE}
     StatCheck $?
 
     Print "Cleanup old content"
-    rm -rf /home/$APP_USER/$COMPONENT &>>$LOG_FILE
+    rm -rf /home/${APP_USER}/${COMPONENT} &>>${LOG_FILE}
     StatCheck $?
 
     Print "extract app content"
-    cd /home/$APP_USER &>>$LOG_FILE && unzip -o /tmp/$COMPONENT.zip &>>$LOG_FILE && mv $COMPONENT-main $COMPONENT &>>$LOG_FILE
+    cd /home/${APP_USER} &>>${LOG_FILE} && unzip -o /tmp/${COMPONENT}.zip &>>${LOG_FILE} && mv ${COMPONENT}-main ${COMPONENT} &>>${LOG_FILE}
     StatCheck $?
 }
 
 SERVICE_SETUP() {
 
     Print "Fixing the permissions"
-    chown -R $APP_USER:$APP_USER /home/$APP_USER
+    chown -R ${APP_USER}:${APP_USER} /home/${APP_USER}
     StatCheck $?
 
     Print "Setup systemd file"
@@ -62,28 +62,28 @@ SERVICE_SETUP() {
            -e 's/CARTHOST/cart.roboshop.internal/' \
            -e 's/USERHOST/user.roboshop.internal/' \
            -e 's/AMQPHOST/rabbitmq.roboshop.internal/' \
-            /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE && mv /home/roboshop/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.service &>>$LOG_FILE
+            /home/${APP_USER}/${COMPONENT}/systemd.service &>>${LOG_FILE} && mv /home/roboshop/${COMPONENT}/systemd.service /etc/systemd/system/${COMPONENT}.service &>>${LOG_FILE}
     StatCheck $?
 
-    Print "Restart $COMPONENT service"
-    systemctl daemon-reload &>>$LOG_FILE && systemctl start $COMPONENT &>>$LOG_FILE && systemctl enable $COMPONENT &>>$LOG_FILE
+    Print "Restart ${COMPONENT} service"
+    systemctl daemon-reload &>>${LOG_FILE} && systemctl start ${COMPONENT} &>>${LOG_FILE} && systemctl enable ${COMPONENT} &>>${LOG_FILE}
     StatCheck $?
 }
 
 NODEJS() {
   Print "Configure Yum repos"
-  curl -fsSL https://rpm.nodesource.com/setup_lts.x | bash - &>>$LOG_FILE
+  curl -fsSL https://rpm.nodesource.com/setup_lts.x | bash - &>>${LOG_FILE}
   StatCheck $?
 
 
   Print "Installing NodeJS"
-  yum install nodejs gcc-c++ -y &>>$LOG_FILE
+  yum install nodejs gcc-c++ -y &>>${LOG_FILE}
   StatCheck $?
 
   APP_SETUP
 
   Print "Installing npm content"
-  cd /home/$APP_USER/$COMPONENT &>>$LOG_FILE && npm install &>>$LOG_FILE
+  cd /home/${APP_USER}/${COMPONENT} &>>${LOG_FILE} && npm install &>>${LOG_FILE}
   StatCheck $?
 
   SERVICE_SETUP
@@ -92,13 +92,13 @@ NODEJS() {
 MAVEN() {
 
   Print "Install maven"
-  yum install maven -y &>>$LOG_FILE
+  yum install maven -y &>>${LOG_FILE}
   StatCheck $?
 
   APP_SETUP
 
   Print "maven packaging"
-  cd /home/$APP_USER/$COMPONENT &>>$LOG_FILE && mvn clean package &>>$LOG_FILE && mv target/shipping-1.0.jar shipping.jar &>>$LOG_FILE
+  cd /home/${APP_USER}/${COMPONENT} &>>${LOG_FILE} && mvn clean package &>>${LOG_FILE} && mv target/shipping-1.0.jar shipping.jar &>>${LOG_FILE}
   StatCheck $?
 
   SERVICE_SETUP
@@ -107,13 +107,13 @@ MAVEN() {
 PYTHON() {
 
 Print "Installing Python"
-yum install python36 gcc python3-devel -y &>>$LOG_FILE
+yum install python36 gcc python3-devel -y &>>${LOG_FILE}
 StatCheck $?
 
 APP_SETUP
 
 Print "Install python dependencies"
-cd /home/$APP_USER/$COMPONENT &>>$LOG_FILE && pip3 install -r requirements.txt &>>$LOG_FILE
+cd /home/${APP_USER}/${COMPONENT} &>>${LOG_FILE} && pip3 install -r requirements.txt &>>${LOG_FILE}
 StatCheck $?
 
 SERVICE_SETUP
