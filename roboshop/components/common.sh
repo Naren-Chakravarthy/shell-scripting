@@ -58,6 +58,9 @@ SERVICE_SETUP() {
     sed -i -e 's/CATALOGUE_ENDPOINT/catalogue.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
     sed -i -e 's/CARTENDPOINT/cart.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
     sed -i -e 's/DBHOST/mysql.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
+    sed -i -e 's/CARTHOST/cart.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
+    sed -i -e 's/USERHOST/user.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
+    sed -i -e 's/AMQPHOST/rabbitmq.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
     mv /home/$APP_USER/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.service &>>$LOG_FILE
     StatCheck $?
 
@@ -98,3 +101,28 @@ MAVEN() {
   StatCheck $?
   SERVICE_SETUP
 }
+
+PYTHON() {
+
+Print "Installing Python"
+yum install python36 gcc python3-devel -y &>>$LOG_FILE
+StatCheck $?
+
+APP_SETUP
+
+Print "Install python dependencies"
+cd /home/$APP_USER/$COMPONENT &>>$LOG_FILE && pip3 install -r requirements.txt &>>$LOG_FILE
+StatCheck $?
+
+SERVICE_SETUP
+}
+
+
+
+
+
+
+
+
+
+
