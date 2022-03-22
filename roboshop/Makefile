@@ -27,3 +27,6 @@ rabbitmq:
 
 payment:
 	bash components/payment.sh
+
+dispatch:
+	bash components/dispatch.sh
