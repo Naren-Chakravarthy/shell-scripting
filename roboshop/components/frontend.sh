@@ -14,7 +14,7 @@ StatCheck $?
 
 
 Print "Downloading the nginx content"
-curl -f -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip" &>>$LOG_FILE
+curl -f -s -L -o /tmp/frontend.zip "https://github.com/$APP_USER-devops-project/frontend/archive/main.zip" &>>$LOG_FILE
 StatCheck $?
 
 
