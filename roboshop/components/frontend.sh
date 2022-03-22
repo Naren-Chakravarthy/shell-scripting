@@ -29,9 +29,9 @@ StatCheck $?
 
 
 Print "Update Roboshop Configuration"
-for components in catalogue user cart shipping payment ; do
-echo -e "updating $components configuration"
-sed -i -e '/$components/s/localhost/$components.roboshop.internal/' /etc/nginx/default.d/roboshop.conf &>>$LOG_FILE
+for component in catalogue user cart shipping payment ; do
+echo -e "updating $component configuration"
+sed -i -e "/$component/s/localhost/$component.roboshop.internal/" /etc/nginx/default.d/roboshop.conf &>>$LOG_FILE
 StatCheck $?
 done
 
