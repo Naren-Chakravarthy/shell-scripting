@@ -52,17 +52,16 @@ SERVICE_SETUP() {
     StatCheck $?
 
     Print "Setup systemd file"
-    sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
-    sed -i -e 's/MONGO_ENDPOINT/mongodb.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
-    sed -i -e 's/REDIS_ENDPOINT/redis.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
-    sed -i -e 's/CATALOGUE_ENDPOINT/catalogue.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
-    sed -i -e 's/CARTENDPOINT/cart.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
-    sed -i -e 's/DBHOST/mysql.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
-    sed -i -e 's/CARTHOST/cart.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
-    sed -i -e 's/USERHOST/user.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
-    sed -i -e 's/AMQPHOST/rabbitmq.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
-    sed -i -e 's/AMQP_HOST/rabbitmq.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
-    mv /home/$APP_USER/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.service &>>$LOG_FILE
+    sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/' \
+           -e 's/MONGO_ENDPOINT/mongodb.roboshop.internal/' \
+           -e 's/REDIS_ENDPOINT/redis.roboshop.internal/' \
+           -e 's/CATALOGUE_ENDPOINT/catalogue.roboshop.internal/' \
+           -e 's/CARTENDPOINT/cart.roboshop.internal/' \
+           -e 's/DBHOST/mysql.roboshop.internal/' \
+           -e 's/CARTHOST/cart.roboshop.internal/' \
+           -e 's/USERHOST/user.roboshop.internal/' \
+           -e 's/AMQPHOST/rabbitmq.roboshop.internal/' \
+           /home/$APP_USER/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.service &>>$LOG_FILE
     StatCheck $?
 
     Print "Restart $COMPONENT service"
