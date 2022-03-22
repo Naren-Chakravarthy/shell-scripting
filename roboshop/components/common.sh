@@ -53,8 +53,8 @@ SERVICE_SETUP() {
 
     Print "Setup systemd file"
     sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/' \
-           -e 's/MONGO_ENDPOINT/mongodb.roboshop.internal/' \
            -e 's/REDIS_ENDPOINT/redis.roboshop.internal/' \
+           -e 's/MONGO_ENDPOINT/mongodb.roboshop.internal/' \
            -e 's/CATALOGUE_ENDPOINT/catalogue.roboshop.internal/' \
            -e 's/CARTENDPOINT/cart.roboshop.internal/' \
            -e 's/DBHOST/mysql.roboshop.internal/' \
@@ -82,7 +82,7 @@ NODEJS(){
   APP_SETUP
 
   Print "Installing npm content"
-  cd /home/$APP_USER/$COMPONENT &>>$LOG_FILE && npm install &>>$LOG_FILE
+  npm install &>>$LOG_FILE
   StatCheck $?
 
   SERVICE_SETUP
