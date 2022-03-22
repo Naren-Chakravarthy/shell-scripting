@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="Making frontend components">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="Making frontend components" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,13 +36,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647067533490</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Adding a new sample file for demonstration">
-      <created>1647085789808</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1647085789808</updated>
     </task>
     <task id="LOCAL-00002" summary="Adding a one more line for demo">
       <created>1647088720165</created>
@@ -382,7 +373,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647940924026</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Making frontend components">
+      <created>1647941230245</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1647941230246</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
