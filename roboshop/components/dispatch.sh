@@ -2,6 +2,7 @@
 
 source components/common.sh
 
+COMPONENT=dispatch
 
 Print "Installing GoLang"
  yum install golang -y &>>$LOG_FILE
