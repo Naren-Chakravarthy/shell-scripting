@@ -32,7 +32,7 @@ APP_SETUP() {
     StatCheck $?
 
    Print "Downloading the app content"
-    curl -f -s -L -o /tmp/$COMPONENT.zip "https://github.com/$APP_USER-devops-project/$COMPONENT/archive/main.zip"
+    curl -f -s -L -o /tmp/$COMPONENT.zip "https://github.com/roboshop-devops-project/$COMPONENT/archive/main.zip"
     StatCheck $?
 
     Print "Cleanup old content"
