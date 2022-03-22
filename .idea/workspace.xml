@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="Making frontend components">
+    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="Rabbitmq script">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/roboshop/components/rabbitmq.sh" beforeDir="false" afterPath="$PROJECT_DIR$/roboshop/components/rabbitmq.sh" afterDir="false" />
     </list>
@@ -39,20 +39,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647067533490</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Adding a second line for demo">
-      <created>1647103263173</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1647103263173</updated>
-    </task>
-    <task id="LOCAL-00004" summary="creating a first project for she bang demonstration">
-      <created>1647105668525</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1647105668525</updated>
     </task>
     <task id="LOCAL-00005" summary="created a first script for she bang demonstration">
       <created>1647106037107</created>
@@ -383,7 +369,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647941605442</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Rabbitmq script">
+      <created>1647943057802</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1647943057802</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Rabbitmq script">
+      <created>1647943230674</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1647943230675</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -413,6 +413,7 @@
     <MESSAGE value="Roboshop Project Intiation" />
     <MESSAGE value="Make file" />
     <MESSAGE value="Making frontend components" />
-    <option name="LAST_COMMIT_MESSAGE" value="Making frontend components" />
+    <MESSAGE value="Rabbitmq script" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rabbitmq script" />
   </component>
 </project>
