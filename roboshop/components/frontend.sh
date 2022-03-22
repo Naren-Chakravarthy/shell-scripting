@@ -24,12 +24,11 @@ StatCheck $?
 
 
 Print "Extracting and Archive"
-cd /usr/share/nginx/html &>>$LOG_FILE && unzip -o /tmp/frontend.zip &>>$LOG_FILE && mv frontend-main/* . &>>$LOG_FILE && mv static/* . &>>$LOG_FILE
+cd /usr/share/nginx/html &>>$LOG_FILE && unzip -o /tmp/frontend.zip &>>$LOG_FILE && mv frontend-main/* . &>>$LOG_FILE && mv static/* . &>>$LOG_FILE && rm -rf frontend-main README.md &>>$LOG_FILE && mv localhost.conf /etc/nginx/default.d/roboshop.conf &>>$LOG_FILE
 StatCheck $?
 
 
 Print "Update Roboshop Configuration"
-mv localhost.conf /etc/nginx/default.d/roboshop.conf &>>$LOG_FILE
 for components in catalogue user cart shipping payment ; do
 echo -e "updating $components configuration"
 sed -i -e '/$components/s/localhost/$components.roboshop.internal/' /etc/nginx/default.d/roboshop.conf &>>$LOG_FILE
