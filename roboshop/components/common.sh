@@ -61,7 +61,7 @@ SERVICE_SETUP() {
            -e 's/CARTHOST/cart.roboshop.internal/' \
            -e 's/USERHOST/user.roboshop.internal/' \
            -e 's/AMQPHOST/rabbitmq.roboshop.internal/' \
-         mv /home/$APP_USER/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.service &>>$LOG_FILE
+            /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE && mv /home/$APP_USER/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.service &>>$LOG_FILE
     StatCheck $?
 
     Print "Restart $COMPONENT service"
