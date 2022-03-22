@@ -25,11 +25,11 @@ StatCheck $?
 
 #1. Create application user
 
-```sql
+
 # rabbitmqctl add_user roboshop roboshop123
 # rabbitmqctl set_user_tags roboshop administrator
 # rabbitmqctl set_permissions -p / roboshop ".*" ".*" ".*"
-```
 
-Ref link : [https://www.rabbitmq.com/rabbitmqctl.8.html#User_Management](https://www.rabbitmq.com/rabbitmqctl.8.html#User_Management)
+
+#Ref link : [https://www.rabbitmq.com/rabbitmqctl.8.html#User_Management](https://www.rabbitmq.com/rabbitmqctl.8.html#User_Management)
 
