@@ -16,6 +16,7 @@ Print "Intilization of dispatch service"
  go build &>>$LOG_FILE
  StatCheck $?
 
+SERVICE_SETUP
 
 
 

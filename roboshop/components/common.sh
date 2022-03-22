@@ -62,6 +62,7 @@ SERVICE_SETUP() {
     sed -i -e 's/CARTHOST/cart.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
     sed -i -e 's/USERHOST/user.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
     sed -i -e 's/AMQPHOST/rabbitmq.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
+    sed -i -e 's/AMQP_HOST/rabbitmq.roboshop.internal/' /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE
     mv /home/$APP_USER/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.service &>>$LOG_FILE
     StatCheck $?
 
