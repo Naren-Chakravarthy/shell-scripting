@@ -24,15 +24,17 @@ rm -f $LOG_FILE
 APP_USER=roboshop
 
 APP_SETUP() {
-  Print "Adding Application user"
+
     id $APP_USER &>>$LOG_FILE
     if [ "$?" -ne 0 ]; then
-    useradd $APP_USER &>>$LOG_FILE
+      Print "Adding Application user"
+      useradd $APP_USER &>>$LOG_FILE
+      StatCheck $?
     fi
-    StatCheck $?
+
 
    Print "Downloading the app content"
-    curl -f -s -L -o /tmp/$COMPONENT.zip "https://github.com/$APP_USER-devops-project/$COMPONENT/archive/main.zip" &>>$LOG_FILE
+    curl -f -s -L -o /tmp/$COMPONENT.zip "https://github.com/roboshop-devops-project/$COMPONENT/archive/main.zip" &>>$LOG_FILE
     StatCheck $?
 
     Print "Cleanup old content"
@@ -41,7 +43,6 @@ APP_SETUP() {
 
     Print "extract app content"
     cd /home/$APP_USER &>>$LOG_FILE && unzip -o /tmp/$COMPONENT.zip &>>$LOG_FILE && mv $COMPONENT-main $COMPONENT &>>$LOG_FILE
-    cd /home/$APP_USER/$COMPONENT &>>$LOG_FILE
     StatCheck $?
 }
 
@@ -61,7 +62,7 @@ SERVICE_SETUP() {
            -e 's/CARTHOST/cart.roboshop.internal/' \
            -e 's/USERHOST/user.roboshop.internal/' \
            -e 's/AMQPHOST/rabbitmq.roboshop.internal/' \
-            /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE && mv /home/$APP_USER/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.service &>>$LOG_FILE
+            /home/$APP_USER/$COMPONENT/systemd.service &>>$LOG_FILE && mv /home/roboshop/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.service &>>$LOG_FILE
     StatCheck $?
 
     Print "Restart $COMPONENT service"
@@ -82,7 +83,7 @@ NODEJS() {
   APP_SETUP
 
   Print "Installing npm content"
-  npm install &>>$LOG_FILE
+  cd /home/$APP_USER/$COMPONENT &>>$LOG_FILE && npm install &>>$LOG_FILE
   StatCheck $?
 
   SERVICE_SETUP
