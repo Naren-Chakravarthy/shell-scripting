@@ -69,7 +69,7 @@ SERVICE_SETUP() {
     systemctl daemon-reload &>>$LOG_FILE && systemctl start $COMPONENT &>>$LOG_FILE && systemctl enable $COMPONENT &>>$LOG_FILE
     StatCheck $?
 }
-#FUNCTION
+
 NODEJS() {
   Print "Configure Yum repos"
   curl -fsSL https://rpm.nodesource.com/setup_lts.x | bash - &>>$LOG_FILE
