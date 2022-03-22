@@ -69,7 +69,7 @@ SERVICE_SETUP() {
     StatCheck $?
 }
 #FUNCTION
-NODEJS(){
+NODEJS() {
   Print "Configure Yum repos"
   curl -fsSL https://rpm.nodesource.com/setup_lts.x | bash - &>>$LOG_FILE
   StatCheck $?
