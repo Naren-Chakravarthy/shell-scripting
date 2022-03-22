@@ -32,7 +32,7 @@ APP_SETUP() {
     StatCheck $?
 
    Print "Downloading the app content"
-    curl -f -s -L -o /tmp/$COMPONENT.zip "https://github.com/roboshop-devops-project/$COMPONENT/archive/main.zip"
+    curl -f -s -L -o /tmp/$COMPONENT.zip "https://github.com/roboshop-devops-project/$COMPONENT/archive/main.zip" &>>$LOG_FILE
     StatCheck $?
 
     Print "Cleanup old content"
@@ -61,7 +61,7 @@ SERVICE_SETUP() {
            -e 's/CARTHOST/cart.roboshop.internal/' \
            -e 's/USERHOST/user.roboshop.internal/' \
            -e 's/AMQPHOST/rabbitmq.roboshop.internal/' \
-           /home/$APP_USER/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.service &>>$LOG_FILE
+         mv /home/$APP_USER/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.service &>>$LOG_FILE
     StatCheck $?
 
     Print "Restart $COMPONENT service"
