@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="create ec2 instance script">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create-ec2.sh" beforeDir="false" afterPath="$PROJECT_DIR$/create-ec2.sh" afterDir="false" />
-    </list>
+    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="create ec2 instance script" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,27 +42,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647067533490</updated>
-    </task>
-    <task id="LOCAL-00218" summary="Merge remote-tracking branch 'origin/main'">
-      <created>1647803496895</created>
-      <option name="number" value="00218" />
-      <option name="presentableId" value="LOCAL-00218" />
-      <option name="project" value="LOCAL" />
-      <updated>1647803496895</updated>
-    </task>
-    <task id="LOCAL-00219" summary="Merge remote-tracking branch 'origin/main'">
-      <created>1647803593077</created>
-      <option name="number" value="00219" />
-      <option name="presentableId" value="LOCAL-00219" />
-      <option name="project" value="LOCAL" />
-      <updated>1647803593077</updated>
-    </task>
-    <task id="LOCAL-00220" summary="Merge remote-tracking branch 'origin/main'">
-      <created>1647803706047</created>
-      <option name="number" value="00220" />
-      <option name="presentableId" value="LOCAL-00220" />
-      <option name="project" value="LOCAL" />
-      <updated>1647803706047</updated>
     </task>
     <task id="LOCAL-00221" summary="Merge remote-tracking branch 'origin/main'">
       <created>1647804077992</created>
@@ -389,7 +365,28 @@
       <option name="project" value="LOCAL" />
       <updated>1648369888839</updated>
     </task>
-    <option name="localTasksCounter" value="267" />
+    <task id="LOCAL-00267" summary="create ec2 instance script">
+      <created>1648371086575</created>
+      <option name="number" value="00267" />
+      <option name="presentableId" value="LOCAL-00267" />
+      <option name="project" value="LOCAL" />
+      <updated>1648371086576</updated>
+    </task>
+    <task id="LOCAL-00268" summary="create ec2 instance script">
+      <created>1648371156252</created>
+      <option name="number" value="00268" />
+      <option name="presentableId" value="LOCAL-00268" />
+      <option name="project" value="LOCAL" />
+      <updated>1648371156252</updated>
+    </task>
+    <task id="LOCAL-00269" summary="create ec2 instance script">
+      <created>1648371178661</created>
+      <option name="number" value="00269" />
+      <option name="presentableId" value="LOCAL-00269" />
+      <option name="project" value="LOCAL" />
+      <updated>1648371178661</updated>
+    </task>
+    <option name="localTasksCounter" value="270" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
