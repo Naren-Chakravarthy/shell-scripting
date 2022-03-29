@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="create ec2 instance script" />
+    <list default="true" id="abe75c24-70be-411f-97ea-987df0ece4df" name="Changes" comment="create ec2 instance script">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create-ec2.sh" beforeDir="false" afterPath="$PROJECT_DIR$/create-ec2.sh" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,13 +45,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647067533490</updated>
-    </task>
-    <task id="LOCAL-00233" summary="Merge remote-tracking branch 'origin/main'">
-      <created>1647960698558</created>
-      <option name="number" value="00233" />
-      <option name="presentableId" value="LOCAL-00233" />
-      <option name="project" value="LOCAL" />
-      <updated>1647960698558</updated>
     </task>
     <task id="LOCAL-00234" summary="Merge remote-tracking branch 'origin/main'">
       <created>1647960930249</created>
@@ -386,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648559336981</updated>
     </task>
-    <option name="localTasksCounter" value="282" />
+    <task id="LOCAL-00282" summary="create ec2 instance script">
+      <created>1648559403110</created>
+      <option name="number" value="00282" />
+      <option name="presentableId" value="LOCAL-00282" />
+      <option name="project" value="LOCAL" />
+      <updated>1648559403110</updated>
+    </task>
+    <option name="localTasksCounter" value="283" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
