@@ -13,7 +13,8 @@ SG_ID=$(aws ec2 describe-security-groups --filters "Name=group-name,Values=allow
 echo $AMI_ID
 PRIVATE_IP=$(aws ec2 run-instances \
     --image-id ${AMI_ID} \
-    --instance-type t2.micro --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=${COMPONENT}}]" \
+    --instance-type t2.micro \
+    --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=${COMPONENT}}]" \
     --instance-market-options "MarketType=spot,SpotOptions={SpotInstanceType=persistent,InstanceInterruptionBehavior=stop}" \
     --security-group-ids ${SG_ID} \
     | jq '.Instances[].PrivateIpAddress' | sed -e 's/"//g')
