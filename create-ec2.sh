@@ -10,7 +10,7 @@ ZONE_ID="Z07840263P1VQXP880Q8W"
 
 AMI_ID=$(aws ec2 describe-images --filters "Name=name,Values=Centos-7-DevOps-Practice" | jq '.Images[].ImageId' | sed -e 's/"//g')
 SG_ID=$(aws ec2 describe-security-groups --filters "Name=group-name,Values=allow all traffic from public" | jq ".SecurityGroups[].GroupId" | sed -e 's/"//g')
-echo $AMI_ID
+echo $AMI_ID >/tmp/amiid.log
 PTRIVATE_IP=$(aws ec2 run-instances \
     --image-id ${AMI_ID} \
     --instance-type t2.micro --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=${COMPONENT}}]" \
